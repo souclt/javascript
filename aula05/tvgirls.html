@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(167, 72, 255);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>iniciando</h1>
+    <p>resultado</p>
+    <p>aprendendo a usa <strong>dom</strong> aqui</p>
+    <div>clica ai</div>
 </body>
 <script>
-        
+    var p1 = window.document.getElementsByTagName('p')[0]
+       window.document.write('esta escrito q seu pai é um cabrito: ' + p1.innerText)
 
 </script>
 </html>
