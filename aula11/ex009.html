@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibge</title>
+</head>
+<body>
+    <h1>descubra se vc é estrangeiro ou brasileiro</h1>
+    <p>insira seu pais de origem</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="descobrir" name="des" id="des" onclick="descobrir()">
+    <div id="descobertagem"> vc é</div>
+</body>
+    <script>
+        function descobrir(){
+            var p = document.getElementById('pais')
+            var na = String(p.value)
+            descobertagem.innerHTML = (`voce é ${p}`)
+            if (na == `brasil`) {
+                descobertagem.innerHTML = ('brasileiro')}
+            else {
+                descobertagem.innerHTML =('gringo')
+            }
+            }
+        
+    </script>
+</html>

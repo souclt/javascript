@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>somando</h1>
+    <input type="number" name="num" id="in"> +
+    <input type="number" name="nem" id="inu">
+    <input type="button" value="soma" onclick="soma()">
+    <div id="res">resultado</div>
+</body>
+       
+    <script>
+        function soma(){
+        var a = document.getElementsByName('num')[0]
+        var b = document.querySelector('input#inu')
+        var so = document.getElementById('res')
+        var n1 = Number(a.value)
+        var n2 = Number(b.value)
+        var c = n1 + n2
+        so.innerHTML = `o resultado da soma de ${n1} e ${n2} é ${c}`}
+    </script>
+</html>

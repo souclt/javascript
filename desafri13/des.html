@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hora do dia</title>
+    <style>
+        body {
+            background: rgb(212, 187, 141)
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        section { background-color: white;
+            width: 700px;
+            height: 415px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px black;}
+        #msg {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 1.2em;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 500px;
+            transform: translate(65%, 5%);
+        }
+        footer {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+    <h1>Hora do Dia</h1>
+    </header>
+    <section>
+    <div id="msg">
+       mesage
+    </div>
+    <div id="foto" >
+        <img src="1896110-arroz-campo-ao-amanhecer-foto.jpg" alt="" id="ibage">
+    </div>
+    </section>
+    <footer>
+        <p>criado por Nicolas Rodrigo</p>
+    </footer>
+    </body>
+    
+    <script>
+        function carregar(){
+        var msg = document.getElementById('msg')
+        var ibagem = document.getElementById('ibage')
+        var hr = new Date() 
+        var agr = hr.getHours()
+        
+        
+        msg.innerHTML = (`agora são ${agr} horas`)
+        if (agr >= 0 && agr < 12) {
+        ibagem.src = '1896110-arroz-campo-ao-amanhecer-foto.jpg'
+        document.body.style.backgroundColor = '#e2cd9f'
+
+    }   else if (agr >= 12 && agr < 18){
+        ibagem.src = 'images.jpeg'
+        document.body.style.backgroundColor = '#b9846f'
+    }   
+        else {
+        ibagem.src = 'image.jpg'
+        document.body.style.backgroundColor = '#515154'
+    }
+}
+       
+
+    </script>
+</html>
+
+
