@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(34, 34, 250);
+}
+header {
+    padding-top: 55px ;
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px;
+}
+#nasc {
+    padding: 20px 15px 10px 15px;
+}
+#geni {
+    padding: 10px 15px 15px 15px;
+}
+#boti {
+    padding: 15px;
+}
+#foto {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}

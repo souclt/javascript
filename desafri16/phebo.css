@@ -1,0 +1,33 @@
+*{
+    padding: 15px;
+}
+
+body {
+    background: rgb(97, 228, 217)
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+section { background-color: white;
+    width: 675px;
+    height: 375px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;}
+#msg {
+    text-align: left;
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    transform: translate(65%, 5%);
+}
+footer {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

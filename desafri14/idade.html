@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de idade</title>
+    <link rel="stylesheet" href="lero.css">
+</head>
+<body>
+    <header>
+        <h1>verificador de idade</h1>
+    </header>
+    <section>
+        <div id="nasc">
+            <label for="ano">Ano de nascimento:</label>
+            <input type="number" id="ano" name="ano">
+        </div>
+        <div id="geni">
+            <label for="">Sexo: </label>
+            <input type="radio" name="gen" id="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="gen" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <div id="boti">
+            <input type="submit" value="detectar" onclick="verificar()">
+        </div>
+        <div  id="res">
+            <br>
+        </div>
+        
+
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="pato.js"></script>
+</body>
+</html>
